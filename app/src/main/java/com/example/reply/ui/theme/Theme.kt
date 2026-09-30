@@ -3,6 +3,7 @@ package com.example.reply.ui.theme
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Shapes
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
@@ -12,6 +13,8 @@ import androidx.compose.ui.platform.LocalContext
 
 private val LightColorScheme = lightColorScheme()
 private val DarkColorScheme = darkColorScheme()
+
+val Shapes = Shapes()
 
 @Composable
 fun ReplyTheme(
@@ -30,6 +33,8 @@ fun ReplyTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
+        typography = Typography,
+        shapes = Shapes,
         content = content
     )
 }
